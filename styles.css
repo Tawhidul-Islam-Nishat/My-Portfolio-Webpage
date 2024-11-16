@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Welcome Section Styles */
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff6347;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 50px 20px;
+    background-color: #e0e0e0;
+}
+
+.project-tile {
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.project-tile a:hover {
+    color: #ff6347;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#profile-link {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#profile-link:hover {
+    color: #ff4500;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-tile {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
